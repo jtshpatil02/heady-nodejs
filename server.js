@@ -1,8 +1,12 @@
-'use strict';
-const express = require('express');
-// Constants
-const PORT = 3000;
-const app = express();
-app.get('/', (req, res) => { res.send('Docker and Nodejs'); } );
-app.listen(PORT, HOST);
-console.log(`Running on ${PORT}`);
+const http = require('http'),
+      server = http.createServer();
+
+server.on('request',(request,response)=>{
+   response.writeHead(200,{'Content-Type':'text/plain'});
+   response.write('Hello world');
+   response.end();
+});
+
+server.listen(3000,()=>{
+  console.log('Node server created at port 3000');
+});
