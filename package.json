@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "create a dockerfile on Nodejs project",
   "author": "Jitesh B. Patil",
-  "main": "heady-nodejs.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node heady-nodejs.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.16.1"
