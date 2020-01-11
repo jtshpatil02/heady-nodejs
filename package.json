@@ -1,13 +1,12 @@
 {
-  "name": "nodejs app",
+  "name": "heady-nodejs",
   "version": "1.0.0",
-  "description": "create a dockerfile on Nodejs project",
-  "author": "Jitesh B. Patil",
+  "description": "Nodejs-Loadbalancer",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "dependencies": {
-    "express": "^4.16.1"
-  }
+  "author": "Jitesh B. Patil",
+  "license": "ISC"
 }
